@@ -1,0 +1,244 @@
+{
+  "items": [
+    {
+      "id": "burger_classic",
+      "name": "킹스 클래식 버거",
+      "category": "burger",
+      "price": 5500,
+      "imageAssetName": "burger_classic",
+      "description": "육즙 가득한 비프 패티와 신선한 야채가 조화를 이루는 클래식 버거"
+    },
+    {
+      "id": "burger_spicy_chicken",
+      "name": "스파이시 치킨 버거",
+      "category": "burger",
+      "price": 6000,
+      "imageAssetName": "burger_spicy_chicken",
+      "description": "바삭한 치킨 패티에 매콤한 소스를 더한 인기 메뉴"
+    },
+    {
+      "id": "burger_double_cheese",
+      "name": "더블 치즈 버거",
+      "category": "burger",
+      "price": 6500,
+      "imageAssetName": "burger_double_cheese",
+      "description": "두 장의 패티와 진한 체다 치즈가 만나는 풍부한 맛"
+    },
+    {
+      "id": "burger_bacon_deluxe",
+      "name": "베이컨 디럭스 버거",
+      "category": "burger",
+      "price": 7000,
+      "imageAssetName": "burger_bacon_deluxe",
+      "description": "바삭한 베이컨과 프리미엄 패티의 완벽한 조합"
+    },
+    {
+      "id": "burger_veggie",
+      "name": "베지 버거",
+      "category": "burger",
+      "price": 5800,
+      "imageAssetName": "burger_veggie",
+      "description": "식물성 패티로 만든 건강한 버거"
+    },
+    {
+      "id": "set_classic",
+      "name": "킹스 클래식 세트",
+      "category": "burger",
+      "price": 7500,
+      "imageAssetName": "set_classic",
+      "description": "킹스 클래식 버거 + 감자튀김 + 음료"
+    },
+    {
+      "id": "set_spicy_chicken",
+      "name": "스파이시 치킨 세트",
+      "category": "burger",
+      "price": 8000,
+      "imageAssetName": "set_spicy_chicken",
+      "description": "스파이시 치킨 버거 + 감자튀김 + 음료"
+    },
+    {
+      "id": "set_double_cheese",
+      "name": "더블 치즈 세트",
+      "category": "burger",
+      "price": 8500,
+      "imageAssetName": "set_double_cheese",
+      "description": "더블 치즈 버거 + 감자튀김 + 음료"
+    },
+    {
+      "id": "set_bacon_deluxe",
+      "name": "베이컨 디럭스 세트",
+      "category": "burger",
+      "price": 9000,
+      "imageAssetName": "set_bacon_deluxe",
+      "description": "베이컨 디럭스 버거 + 감자튀김 + 음료"
+    },
+    {
+      "id": "side_fries_s",
+      "name": "감자튀김 S",
+      "category": "side",
+      "price": 1500,
+      "imageAssetName": "fries_s",
+      "description": "바삭바삭한 황금색 감자튀김 (작은 사이즈)"
+    },
+    {
+      "id": "side_fries_m",
+      "name": "감자튀김 M",
+      "category": "side",
+      "price": 2000,
+      "imageAssetName": "fries_m",
+      "description": "바삭바삭한 황금색 감자튀김 (중간 사이즈)"
+    },
+    {
+      "id": "side_fries_l",
+      "name": "감자튀김 L",
+      "category": "side",
+      "price": 2500,
+      "imageAssetName": "fries_l",
+      "description": "바삭바삭한 황금색 감자튀김 (큰 사이즈)"
+    },
+    {
+      "id": "side_onion_rings",
+      "name": "어니언 링",
+      "category": "side",
+      "price": 2500,
+      "imageAssetName": "onion_rings",
+      "description": "겉은 바삭, 속은 달콤한 양파 튀김"
+    },
+    {
+      "id": "side_chicken_nuggets_4",
+      "name": "치킨 너겟 4조각",
+      "category": "side",
+      "price": 2800,
+      "imageAssetName": "nuggets_4",
+      "description": "부드럽고 고소한 치킨 너겟 4조각"
+    },
+    {
+      "id": "side_chicken_nuggets_6",
+      "name": "치킨 너겟 6조각",
+      "category": "side",
+      "price": 3800,
+      "imageAssetName": "nuggets_6",
+      "description": "부드럽고 고소한 치킨 너겟 6조각"
+    },
+    {
+      "id": "side_mozzarella_sticks",
+      "name": "모짜렐라 스틱",
+      "category": "side",
+      "price": 3500,
+      "imageAssetName": "mozzarella_sticks",
+      "description": "쫀득한 치즈가 쭉쭉 늘어나는 모짜렐라 스틱"
+    },
+    {
+      "id": "drink_cola_s",
+      "name": "콜라 S",
+      "category": "drink",
+      "price": 1200,
+      "imageAssetName": "cola_s",
+      "description": "시원한 콜라 (작은 사이즈)"
+    },
+    {
+      "id": "drink_cola_m",
+      "name": "콜라 M",
+      "category": "drink",
+      "price": 1500,
+      "imageAssetName": "cola_m",
+      "description": "시원한 콜라 (중간 사이즈)"
+    },
+    {
+      "id": "drink_cola_l",
+      "name": "콜라 L",
+      "category": "drink",
+      "price": 1800,
+      "imageAssetName": "cola_l",
+      "description": "시원한 콜라 (큰 사이즈)"
+    },
+    {
+      "id": "drink_zero_cola_m",
+      "name": "제로 콜라 M",
+      "category": "drink",
+      "price": 1500,
+      "imageAssetName": "zero_cola_m",
+      "description": "칼로리 제로, 콜라의 맛은 그대로"
+    },
+    {
+      "id": "drink_sprite_m",
+      "name": "사이다 M",
+      "category": "drink",
+      "price": 1500,
+      "imageAssetName": "sprite_m",
+      "description": "청량한 사이다"
+    },
+    {
+      "id": "drink_fanta_m",
+      "name": "환타 M",
+      "category": "drink",
+      "price": 1500,
+      "imageAssetName": "fanta_m",
+      "description": "상큼한 오렌지 환타"
+    },
+    {
+      "id": "drink_iced_americano",
+      "name": "아이스 아메리카노",
+      "category": "drink",
+      "price": 2000,
+      "imageAssetName": "iced_americano",
+      "description": "진한 에스프레소에 얼음을 더한 시원한 커피"
+    },
+    {
+      "id": "drink_iced_latte",
+      "name": "아이스 라떼",
+      "category": "drink",
+      "price": 2500,
+      "imageAssetName": "iced_latte",
+      "description": "부드러운 우유와 에스프레소의 조화"
+    },
+    {
+      "id": "dessert_ice_cream_cone",
+      "name": "소프트 아이스크림",
+      "category": "dessert",
+      "price": 1200,
+      "imageAssetName": "ice_cream_cone",
+      "description": "부드럽고 달콤한 소프트 아이스크림"
+    },
+    {
+      "id": "dessert_apple_pie",
+      "name": "애플 파이",
+      "category": "dessert",
+      "price": 1800,
+      "imageAssetName": "apple_pie",
+      "description": "따뜻한 사과와 시나몬이 가득한 파이"
+    },
+    {
+      "id": "dessert_chocolate_sundae",
+      "name": "초코 선데이",
+      "category": "dessert",
+      "price": 2200,
+      "imageAssetName": "chocolate_sundae",
+      "description": "아이스크림 위에 진한 초콜릿 소스를 듬뿍"
+    },
+    {
+      "id": "dessert_shake_vanilla",
+      "name": "바닐라 쉐이크",
+      "category": "dessert",
+      "price": 3000,
+      "imageAssetName": "shake_vanilla",
+      "description": "진한 바닐라 맛 쉐이크"
+    },
+    {
+      "id": "dessert_shake_strawberry",
+      "name": "딸기 쉐이크",
+      "category": "dessert",
+      "price": 3000,
+      "imageAssetName": "shake_strawberry",
+      "description": "상큼한 딸기 맛 쉐이크"
+    },
+    {
+      "id": "dessert_shake_chocolate",
+      "name": "초코 쉐이크",
+      "category": "dessert",
+      "price": 3000,
+      "imageAssetName": "shake_chocolate",
+      "description": "진한 초콜릿 맛 쉐이크"
+    }
+  ]
+}

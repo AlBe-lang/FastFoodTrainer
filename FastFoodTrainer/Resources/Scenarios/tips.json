@@ -17,12 +17,100 @@
       "author": "2년차 알바 이OO"
     },
     {
+      "id": "tip_upselling",
+      "title": "자연스러운 세트 추천법",
+      "body": "단품 주문하시는 분께 '세트로 하시면 1,500원만 추가하시면 되는데 어떠세요?'라고 물어보세요. 거절하셔도 괜찮아요! 자연스럽게 물어보는 게 중요해요. 10명 중 3~4명은 세트로 바꾸신답니다.",
+      "category": "upselling",
+      "unlockCondition": "day2_complete",
+      "author": "4년차 알바 최OO"
+    },
+    {
+      "id": "tip_set_menu",
+      "title": "세트 메뉴 빠르게 처리하기",
+      "body": "세트 주문 시 '감자튀김과 콜라로 드릴까요?' 하고 기본 옵션을 먼저 제시하세요. 손님이 다른 걸 원하시면 그때 바꿔드리면 돼요. 이렇게 하면 주문 속도가 2배는 빨라져요!",
+      "category": "order_taking",
+      "unlockCondition": "day2_complete",
+      "author": "2년차 알바 정OO"
+    },
+    {
       "id": "tip_rush_hour",
       "title": "피크타임 꿀팁",
       "body": "점심 러시 때는 다음 손님 주문을 미리 듣고 있으면 시간이 절약돼요. 한 주문 마무리하면서 다음 분께 '잠시만요, 곧 도와드릴게요!' 하고 먼저 메뉴부터 여쭤보세요.",
       "category": "time_management",
       "unlockCondition": "day3_complete",
       "author": "5년차 알바 박OO"
+    },
+    {
+      "id": "tip_multitasking",
+      "title": "멀티태스킹 노하우",
+      "body": "러시 때는 동시에 2~3개 주문을 머릿속에 담아두세요. POS에 입력하면서 다음 손님 말을 듣는 연습을 하면 점점 빨라져요. 처음엔 헷갈리지만 1주일이면 익숙해집니다!",
+      "category": "time_management",
+      "unlockCondition": "day3_complete",
+      "author": "6년차 알바 강OO"
+    },
+    {
+      "id": "tip_kitchen_assembly",
+      "title": "버거 조립 순서 외우기",
+      "body": "번-패티-치즈-야채-소스-번 순서만 기억하세요! 처음엔 메모지 보면서 해도 괜찮아요. 하루에 10개만 만들어도 다음 날부터는 자연스럽게 손이 움직여요. 야채는 가볍게, 소스는 적당히!",
+      "category": "kitchen",
+      "unlockCondition": "day4_complete",
+      "author": "3년차 주방 알바 윤OO"
+    },
+    {
+      "id": "tip_frying_timing",
+      "title": "튀김 타이머 절대 무시하지 마세요",
+      "body": "감자튀김은 정확히 3분! 타이머 울리면 바로 꺼내야 바삭해요. 10초만 늦어도 눅눅해지고, 일찍 꺼내면 설익어요. 타이머 소리 들리면 다른 일 하다가도 무조건 먼저 처리하세요!",
+      "category": "kitchen",
+      "unlockCondition": "day4_complete",
+      "author": "2년차 주방 알바 송OO"
+    },
+    {
+      "id": "tip_complaint_handling",
+      "title": "클레임은 경청이 먼저",
+      "body": "화난 손님을 만나면 먼저 끝까지 이야기를 들어주세요. 중간에 변명하지 말고 '정말 죄송합니다' 하고 진심으로 사과하세요. 90%는 이것만으로도 진정하세요. 해결이 안 되면 매니저님께 도움 요청!",
+      "category": "complaint",
+      "unlockCondition": "day5_complete",
+      "author": "5년차 알바 한OO"
+    },
+    {
+      "id": "tip_apology",
+      "title": "사과의 기술",
+      "body": "'죄송합니다'보다 '정말 죄송합니다', '불편을 드려 죄송합니다'가 더 진심 어려 보여요. 눈을 마주치고, 고개를 살짝 숙이면 효과 2배! 단, 과한 사과는 오히려 역효과예요.",
+      "category": "complaint",
+      "unlockCondition": "day5_complete",
+      "author": "4년차 알바 임OO"
+    },
+    {
+      "id": "tip_mixed_tasks",
+      "title": "카운터-주방 전환 요령",
+      "body": "카운터에서 주방으로 갈 때는 손 씻고 장갑 꼭 갈아 끼세요! 주방에서 카운터로 올 때도 마찬가지예요. 위생이 제일 중요해요. 매니저님이 제일 체크하시는 부분이기도 하고요!",
+      "category": "operations",
+      "unlockCondition": "day6_complete",
+      "author": "3년차 알바 조OO"
+    },
+    {
+      "id": "tip_prioritization",
+      "title": "우선순위 판단법",
+      "body": "튀김 타이머 > 급한 손님 > 일반 손님 > 청소/정리 순으로 우선순위를 두세요. 동시에 여러 일이 생기면 이 순서로 처리하면 실수가 줄어들어요. 익숙해지면 자기만의 우선순위도 생겨요!",
+      "category": "time_management",
+      "unlockCondition": "day6_complete",
+      "author": "7년차 알바 서OO"
+    },
+    {
+      "id": "tip_confidence",
+      "title": "자신감이 실력이다",
+      "body": "일주일만 하면 여러분도 베테랑처럼 보일 수 있어요! 손님 앞에서는 자신 있게 행동하세요. 실수해도 당황하지 말고 침착하게 처리하면 아무도 몰라요. 여러분은 이미 충분히 준비됐어요!",
+      "category": "mindset",
+      "unlockCondition": "day7_complete",
+      "author": "10년차 알바 대장 백OO"
+    },
+    {
+      "id": "tip_first_day_ready",
+      "title": "첫 출근 체크리스트",
+      "body": "복장 체크(깨끗한 옷, 머리 단정), 30분 일찍 도착, 메모장과 펜 준비, 긍정적인 마인드! 이것만 챙기면 첫 날 걱정 없어요. 선배들도 처음엔 다 긴장했어요. 파이팅!",
+      "category": "mindset",
+      "unlockCondition": "day7_complete",
+      "author": "매장 트레이너 안OO"
     }
   ]
 }

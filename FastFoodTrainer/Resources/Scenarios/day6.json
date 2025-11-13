@@ -1,0 +1,122 @@
+{
+  "id": "day6",
+  "dayNumber": 6,
+  "title": "복합 업무 - 카운터와 주방 동시에",
+  "description": "카운터와 주방을 오가며 여러 업무를 동시에 처리하는 실전 능력을 키워요!",
+  "learningGoals": [
+    "카운터/주방 역할 전환",
+    "전체 흐름 파악하기",
+    "협업 시뮬레이션"
+  ],
+  "requiredScore": 80,
+  "stages": [
+    {
+      "id": "day6_stage1",
+      "type": "mixed",
+      "title": "복합 업무 처리",
+      "timeLimitSeconds": 420,
+      "maxSimultaneousOrders": 3,
+      "orders": [
+        {
+          "id": "order1",
+          "customerName": "손님 A",
+          "customerMood": "friendly",
+          "requestText": "킹스 클래식 세트 하나요!",
+          "items": [
+            {
+              "menuId": "set_classic",
+              "menuName": "킹스 클래식 세트",
+              "isSetMenu": true,
+              "options": [
+                {
+                  "key": "side_fries_m",
+                  "label": "감자튀김 M",
+                  "isRequired": true
+                },
+                {
+                  "key": "drink_cola_m",
+                  "label": "콜라 M",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "counter_take_order",
+                "kitchen_assemble_burger",
+                "kitchen_fry_potatoes",
+                "counter_prepare_drink",
+                "counter_deliver_order"
+              ]
+            }
+          ],
+          "correctResponse": "주문 접수 → 버거 조립 → 감자 튀김 → 음료 준비 → 전달 완료!",
+          "paymentAmount": 7500
+        },
+        {
+          "id": "order2",
+          "customerName": "손님 B",
+          "customerMood": "hurried",
+          "requestText": "빨리요! 치킨 버거 2개!",
+          "items": [
+            {
+              "menuId": "burger_spicy_chicken",
+              "menuName": "스파이시 치킨 버거",
+              "isSetMenu": false,
+              "options": [],
+              "expectedSteps": [
+                "counter_take_order",
+                "kitchen_assemble_chicken_burger_1",
+                "kitchen_assemble_chicken_burger_2",
+                "counter_deliver_order"
+              ]
+            }
+          ],
+          "correctResponse": "급한 손님 우선 처리 완료!",
+          "paymentAmount": 12000
+        },
+        {
+          "id": "order3",
+          "customerName": "손님 C",
+          "customerMood": "careful",
+          "requestText": "더블 치즈 세트인데요, 감자는 L로, 음료는 제로콜라로 해주세요. 양상추는 빼고요.",
+          "items": [
+            {
+              "menuId": "set_double_cheese",
+              "menuName": "더블 치즈 세트",
+              "isSetMenu": true,
+              "options": [
+                {
+                  "key": "no_lettuce",
+                  "label": "양상추 빼기",
+                  "isRequired": true
+                },
+                {
+                  "key": "side_fries_l",
+                  "label": "감자튀김 L",
+                  "isRequired": true
+                },
+                {
+                  "key": "drink_zero_cola_m",
+                  "label": "제로콜라 M",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "counter_take_order_with_options",
+                "kitchen_assemble_burger_no_lettuce",
+                "kitchen_fry_potatoes_l",
+                "counter_prepare_zero_cola",
+                "counter_deliver_order"
+              ]
+            }
+          ],
+          "correctResponse": "복잡한 옵션 주문 완벽 처리!",
+          "paymentAmount": 8500
+        }
+      ]
+    }
+  ],
+  "unlockTips": [
+    "tip_mixed_tasks",
+    "tip_prioritization"
+  ]
+}

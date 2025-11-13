@@ -1,0 +1,266 @@
+{
+  "id": "day7",
+  "dayNumber": 7,
+  "title": "종합 평가 - 실전 모의근무",
+  "description": "축하합니다! 마지막 날입니다. 그동안 배운 모든 것을 총동원해서 실전처럼 근무해봐요!",
+  "learningGoals": [
+    "모든 업무 통합 수행",
+    "높은 정확도와 속도 유지",
+    "자신감 있는 고객 응대"
+  ],
+  "requiredScore": 85,
+  "stages": [
+    {
+      "id": "day7_stage1",
+      "type": "mixed",
+      "title": "오전 영업 시작",
+      "timeLimitSeconds": 300,
+      "maxSimultaneousOrders": 2,
+      "orders": [
+        {
+          "id": "order1",
+          "customerName": "아침 손님",
+          "customerMood": "friendly",
+          "requestText": "안녕하세요! 킹스 클래식 세트 주세요.",
+          "items": [
+            {
+              "menuId": "set_classic",
+              "menuName": "킹스 클래식 세트",
+              "isSetMenu": true,
+              "options": [
+                {
+                  "key": "side_fries_m",
+                  "label": "감자튀김 M",
+                  "isRequired": true
+                },
+                {
+                  "key": "drink_cola_m",
+                  "label": "콜라 M",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "greeting",
+                "counter_take_order",
+                "kitchen_assemble_burger",
+                "kitchen_fry_potatoes",
+                "counter_prepare_drink",
+                "counter_deliver_with_smile"
+              ]
+            }
+          ],
+          "correctResponse": "완벽한 아침 서비스!",
+          "paymentAmount": 7500
+        },
+        {
+          "id": "order2",
+          "customerName": "단골 손님",
+          "customerMood": "friendly",
+          "requestText": "스파이시 치킨 세트요, 언제나처럼!",
+          "items": [
+            {
+              "menuId": "set_spicy_chicken",
+              "menuName": "스파이시 치킨 세트",
+              "isSetMenu": true,
+              "options": [
+                {
+                  "key": "side_fries_m",
+                  "label": "감자튀김 M",
+                  "isRequired": true
+                },
+                {
+                  "key": "drink_cola_m",
+                  "label": "콜라 M",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "recognize_regular_customer",
+                "counter_take_order",
+                "kitchen_assemble_burger",
+                "counter_deliver_order"
+              ]
+            }
+          ],
+          "correctResponse": "단골 손님 만족도 UP!",
+          "paymentAmount": 8000
+        }
+      ]
+    },
+    {
+      "id": "day7_stage2",
+      "type": "mixed",
+      "title": "점심 피크타임",
+      "timeLimitSeconds": 360,
+      "maxSimultaneousOrders": 4,
+      "orders": [
+        {
+          "id": "order3",
+          "customerName": "회사원 팀",
+          "customerMood": "hurried",
+          "requestText": "빨리요! 킹스 클래식 세트 3개, 치킨 세트 2개!",
+          "items": [
+            {
+              "menuId": "set_classic",
+              "menuName": "킹스 클래식 세트",
+              "isSetMenu": true,
+              "options": [
+                {
+                  "key": "side_fries_m",
+                  "label": "감자튀김 M",
+                  "isRequired": true
+                },
+                {
+                  "key": "drink_cola_m",
+                  "label": "콜라 M",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "counter_take_large_order",
+                "kitchen_batch_prepare_5_burgers",
+                "kitchen_batch_fry_potatoes",
+                "counter_prepare_5_drinks",
+                "counter_deliver_efficiently"
+              ]
+            }
+          ],
+          "correctResponse": "대량 주문 신속 처리!",
+          "paymentAmount": 37500
+        },
+        {
+          "id": "order4",
+          "customerName": "꼼꼼한 손님",
+          "customerMood": "careful",
+          "requestText": "더블 치즈 버거인데요, 패티 웰던으로, 양상추 빼고, 토마토 추가, 소스는 별도로 주세요.",
+          "items": [
+            {
+              "menuId": "burger_double_cheese",
+              "menuName": "더블 치즈 버거",
+              "isSetMenu": false,
+              "options": [
+                {
+                  "key": "patty_well_done",
+                  "label": "패티 웰던",
+                  "isRequired": true
+                },
+                {
+                  "key": "no_lettuce",
+                  "label": "양상추 빼기",
+                  "isRequired": true
+                },
+                {
+                  "key": "extra_tomato",
+                  "label": "토마토 추가",
+                  "isRequired": true
+                },
+                {
+                  "key": "sauce_on_side",
+                  "label": "소스 별도",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "counter_listen_carefully",
+                "counter_repeat_order",
+                "kitchen_custom_assembly",
+                "counter_double_check",
+                "counter_deliver_order"
+              ]
+            }
+          ],
+          "correctResponse": "복잡한 커스텀 주문 완벽 처리!",
+          "paymentAmount": 7500
+        },
+        {
+          "id": "order5",
+          "customerName": "학생 그룹",
+          "customerMood": "friendly",
+          "requestText": "세트 4개요! 각각 음료를 콜라, 사이다, 제로콜라, 환타로 주세요!",
+          "items": [
+            {
+              "menuId": "set_classic",
+              "menuName": "킹스 클래식 세트",
+              "isSetMenu": true,
+              "options": [
+                {
+                  "key": "side_fries_m",
+                  "label": "감자튀김 M",
+                  "isRequired": true
+                },
+                {
+                  "key": "drink_mix_4",
+                  "label": "음료 4종 혼합",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "counter_take_order",
+                "kitchen_prepare_4_burgers",
+                "counter_prepare_mixed_drinks",
+                "counter_organize_tray",
+                "counter_deliver_order"
+              ]
+            }
+          ],
+          "correctResponse": "다양한 음료 주문 정확 처리!",
+          "paymentAmount": 30000
+        },
+        {
+          "id": "order6",
+          "customerName": "클레임 손님",
+          "customerMood": "angry",
+          "requestText": "아까 주문한 건데 양상추 빼달라고 했는데 들어있어요!",
+          "items": [],
+          "correctResponse": "정말 죄송합니다! 즉시 새로 만들어드리겠습니다.",
+          "paymentAmount": 0
+        }
+      ]
+    },
+    {
+      "id": "day7_stage3",
+      "type": "mixed",
+      "title": "마감 준비",
+      "timeLimitSeconds": 180,
+      "maxSimultaneousOrders": 1,
+      "orders": [
+        {
+          "id": "order7",
+          "customerName": "마지막 손님",
+          "customerMood": "friendly",
+          "requestText": "마감 전에 왔네요! 치킨 세트 하나만 주세요~",
+          "items": [
+            {
+              "menuId": "set_spicy_chicken",
+              "menuName": "스파이시 치킨 세트",
+              "isSetMenu": true,
+              "options": [
+                {
+                  "key": "side_fries_m",
+                  "label": "감자튀김 M",
+                  "isRequired": true
+                },
+                {
+                  "key": "drink_cola_m",
+                  "label": "콜라 M",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "counter_welcome_warmly",
+                "kitchen_fresh_prepare",
+                "counter_deliver_with_thank_you"
+              ]
+            }
+          ],
+          "correctResponse": "마지막까지 완벽한 서비스! 수고하셨습니다!",
+          "paymentAmount": 8000
+        }
+      ]
+    }
+  ],
+  "unlockTips": [
+    "tip_confidence",
+    "tip_first_day_ready"
+  ]
+}

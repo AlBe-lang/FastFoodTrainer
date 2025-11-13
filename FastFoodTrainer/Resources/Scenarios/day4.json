@@ -1,0 +1,145 @@
+{
+  "id": "day4",
+  "dayNumber": 4,
+  "title": "주방 첫 도전 - 버거 조립",
+  "description": "오늘은 주방 파트! 버거를 올바른 순서로 조립하고, 품질을 유지하는 법을 배워요.",
+  "learningGoals": [
+    "버거 조립 순서 익히기",
+    "재료 올바르게 배치하기",
+    "조리 시간 관리"
+  ],
+  "requiredScore": 70,
+  "stages": [
+    {
+      "id": "day4_stage1",
+      "type": "kitchen",
+      "title": "버거 조립 기본",
+      "timeLimitSeconds": 300,
+      "maxSimultaneousOrders": 2,
+      "orders": [
+        {
+          "id": "order1",
+          "customerName": "주문 #101",
+          "customerMood": "neutral",
+          "requestText": "킹스 클래식 버거 1개",
+          "items": [
+            {
+              "menuId": "burger_classic",
+              "menuName": "킹스 클래식 버거",
+              "isSetMenu": false,
+              "options": [],
+              "expectedSteps": [
+                "place_bottom_bun",
+                "add_patty",
+                "add_cheese",
+                "add_lettuce",
+                "add_tomato",
+                "add_sauce",
+                "place_top_bun",
+                "wrap_burger"
+              ]
+            }
+          ],
+          "correctResponse": "정확한 순서로 조립 완료!",
+          "paymentAmount": 0
+        },
+        {
+          "id": "order2",
+          "customerName": "주문 #102",
+          "customerMood": "neutral",
+          "requestText": "스파이시 치킨 버거 1개",
+          "items": [
+            {
+              "menuId": "burger_spicy_chicken",
+              "menuName": "스파이시 치킨 버거",
+              "isSetMenu": false,
+              "options": [],
+              "expectedSteps": [
+                "place_bottom_bun",
+                "add_chicken_patty",
+                "add_lettuce",
+                "add_spicy_sauce",
+                "add_pickles",
+                "place_top_bun",
+                "wrap_burger"
+              ]
+            }
+          ],
+          "correctResponse": "스파이시 치킨 버거 완성!",
+          "paymentAmount": 0
+        },
+        {
+          "id": "order3",
+          "customerName": "주문 #103",
+          "customerMood": "careful",
+          "requestText": "더블 치즈 버거 1개 (양상추 빼기)",
+          "items": [
+            {
+              "menuId": "burger_double_cheese",
+              "menuName": "더블 치즈 버거",
+              "isSetMenu": false,
+              "options": [
+                {
+                  "key": "no_lettuce",
+                  "label": "양상추 빼기",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "place_bottom_bun",
+                "add_patty",
+                "add_cheese",
+                "add_patty_second",
+                "add_cheese_second",
+                "add_tomato",
+                "add_sauce",
+                "place_top_bun",
+                "wrap_burger"
+              ]
+            }
+          ],
+          "correctResponse": "양상추 제외, 더블 치즈 완성!",
+          "paymentAmount": 0
+        }
+      ]
+    },
+    {
+      "id": "day4_stage2",
+      "type": "kitchen",
+      "title": "튀김 타이밍 관리",
+      "timeLimitSeconds": 180,
+      "maxSimultaneousOrders": 1,
+      "orders": [
+        {
+          "id": "order4",
+          "customerName": "감자튀김 주문",
+          "customerMood": "neutral",
+          "requestText": "감자튀김 M 2개, L 1개",
+          "items": [
+            {
+              "menuId": "side_fries",
+              "menuName": "감자튀김",
+              "isSetMenu": false,
+              "options": [],
+              "expectedSteps": [
+                "place_fries_in_fryer",
+                "wait_timer_180s",
+                "remove_fries_when_beep",
+                "shake_excess_oil",
+                "add_salt",
+                "package_m_twice",
+                "package_l_once"
+              ]
+            }
+          ],
+          "correctResponse": "바삭한 감자튀김 완성!",
+          "paymentAmount": 0
+        }
+      ]
+    }
+  ],
+  "unlockTips": [
+    "tip_kitchen_assembly",
+    "tip_frying_timing"
+  ]
+}

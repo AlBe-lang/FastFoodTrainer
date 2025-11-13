@@ -1,0 +1,174 @@
+{
+  "id": "day3",
+  "dayNumber": 3,
+  "title": "피크타임 첫 경험",
+  "description": "점심시간 러시! 여러 손님을 동시에 처리하는 멀티태스킹 능력을 키워봐요.",
+  "learningGoals": [
+    "동시 주문 2~3개 처리",
+    "우선순위 판단 (급한 손님 먼저)",
+    "스트레스 상황에서 실수 줄이기"
+  ],
+  "requiredScore": 70,
+  "stages": [
+    {
+      "id": "day3_stage1",
+      "type": "counter",
+      "title": "점심 러시 타임",
+      "timeLimitSeconds": 240,
+      "maxSimultaneousOrders": 3,
+      "orders": [
+        {
+          "id": "order1",
+          "customerName": "회사원 A",
+          "customerMood": "hurried",
+          "requestText": "빨리요! 킹스 클래식 세트 하나!",
+          "items": [
+            {
+              "menuId": "set_classic",
+              "menuName": "킹스 클래식 세트",
+              "isSetMenu": true,
+              "options": [
+                {
+                  "key": "side_fries_m",
+                  "label": "감자튀김 M",
+                  "isRequired": true
+                },
+                {
+                  "key": "drink_cola_m",
+                  "label": "콜라 M",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "select_set_menu",
+                "confirm_side_fries_m",
+                "confirm_drink_cola_m",
+                "add_to_cart"
+              ]
+            }
+          ],
+          "correctResponse": "네, 킹스 클래식 세트 바로 준비해드릴게요!",
+          "paymentAmount": 7500
+        },
+        {
+          "id": "order2",
+          "customerName": "학생 B",
+          "customerMood": "friendly",
+          "requestText": "저기요~ 더블 치즈 버거 두 개요!",
+          "items": [
+            {
+              "menuId": "burger_double_cheese",
+              "menuName": "더블 치즈 버거",
+              "isSetMenu": false,
+              "options": [],
+              "expectedSteps": [
+                "select_burger",
+                "set_quantity_2",
+                "add_to_cart"
+              ]
+            }
+          ],
+          "correctResponse": "더블 치즈 버거 2개 맞으시죠? 총 13,000원입니다!",
+          "paymentAmount": 13000
+        },
+        {
+          "id": "order3",
+          "customerName": "회사원 C",
+          "customerMood": "hurried",
+          "requestText": "시간 없어요! 치킨 세트 L 사이즈로!",
+          "items": [
+            {
+              "menuId": "set_spicy_chicken",
+              "menuName": "스파이시 치킨 세트",
+              "isSetMenu": true,
+              "options": [
+                {
+                  "key": "side_fries_l",
+                  "label": "감자튀김 L",
+                  "isRequired": true
+                },
+                {
+                  "key": "drink_cola_l",
+                  "label": "콜라 L",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "select_set_menu",
+                "upgrade_all_to_l",
+                "add_to_cart"
+              ]
+            }
+          ],
+          "correctResponse": "네, 스파이시 치킨 세트 L 사이즈로 빠르게 준비해드리겠습니다!",
+          "paymentAmount": 9000
+        },
+        {
+          "id": "order4",
+          "customerName": "주부 D",
+          "customerMood": "careful",
+          "requestText": "킹스 클래식 세트 3개인데, 한 개는 양상추 빼주시고, 음료는 각각 콜라, 사이다, 제로콜라로요.",
+          "items": [
+            {
+              "menuId": "set_classic",
+              "menuName": "킹스 클래식 세트",
+              "isSetMenu": true,
+              "options": [
+                {
+                  "key": "no_lettuce_one",
+                  "label": "양상추 빼기 (1개)",
+                  "isRequired": true
+                },
+                {
+                  "key": "side_fries_m",
+                  "label": "감자튀김 M",
+                  "isRequired": true
+                },
+                {
+                  "key": "drink_mix",
+                  "label": "음료 혼합 (콜라/사이다/제로콜라)",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "select_set_menu",
+                "set_quantity_3",
+                "apply_no_lettuce_to_one",
+                "set_drinks_mixed",
+                "add_to_cart"
+              ]
+            }
+          ],
+          "correctResponse": "킹스 클래식 세트 3개, 한 개는 양상추 빼고, 음료는 콜라, 사이다, 제로콜라 각각 준비해드리겠습니다!",
+          "paymentAmount": 22500
+        },
+        {
+          "id": "order5",
+          "customerName": "배달기사 E",
+          "customerMood": "hurried",
+          "requestText": "포장으로 치킨 버거 5개 빨리요!",
+          "items": [
+            {
+              "menuId": "burger_spicy_chicken",
+              "menuName": "스파이시 치킨 버거",
+              "isSetMenu": false,
+              "options": [],
+              "expectedSteps": [
+                "select_burger",
+                "set_quantity_5",
+                "confirm_takeout",
+                "add_to_cart"
+              ]
+            }
+          ],
+          "correctResponse": "스파이시 치킨 버거 5개 포장으로 바로 준비해드릴게요!",
+          "paymentAmount": 30000
+        }
+      ]
+    }
+  ],
+  "unlockTips": [
+    "tip_rush_hour",
+    "tip_multitasking"
+  ]
+}

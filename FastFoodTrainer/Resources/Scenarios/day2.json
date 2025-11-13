@@ -1,0 +1,151 @@
+{
+  "id": "day2",
+  "dayNumber": 2,
+  "title": "세트 메뉴와 사이드 추천하기",
+  "description": "오늘은 세트 메뉴 주문을 받고, 고객에게 사이드를 추천하는 법을 배워요. 업셀링의 기본!",
+  "learningGoals": [
+    "세트 메뉴 구성 이해하기",
+    "감자튀김/음료 사이즈 옵션 처리",
+    "자연스러운 사이드 추천"
+  ],
+  "requiredScore": 65,
+  "stages": [
+    {
+      "id": "day2_stage1",
+      "type": "counter",
+      "title": "세트 메뉴 첫 주문",
+      "timeLimitSeconds": 360,
+      "maxSimultaneousOrders": 2,
+      "orders": [
+        {
+          "id": "order1",
+          "customerName": "학생 손님",
+          "customerMood": "friendly",
+          "requestText": "킹스 클래식 세트로 주세요!",
+          "items": [
+            {
+              "menuId": "set_classic",
+              "menuName": "킹스 클래식 세트",
+              "isSetMenu": true,
+              "options": [
+                {
+                  "key": "side_fries_m",
+                  "label": "감자튀김 M",
+                  "isRequired": true
+                },
+                {
+                  "key": "drink_cola_m",
+                  "label": "콜라 M",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "select_set_menu",
+                "confirm_side_fries_m",
+                "confirm_drink_cola_m",
+                "ask_dine_in_or_takeout",
+                "add_to_cart"
+              ]
+            }
+          ],
+          "correctResponse": "킹스 클래식 세트 감자튀김 M, 콜라 M 맞으시죠? 매장에서 드시나요, 포장이신가요?",
+          "paymentAmount": 7500
+        },
+        {
+          "id": "order2",
+          "customerName": "직장인 손님",
+          "customerMood": "neutral",
+          "requestText": "치킨 버거 주세요. 음료는 제로 콜라요.",
+          "items": [
+            {
+              "menuId": "burger_spicy_chicken",
+              "menuName": "스파이시 치킨 버거",
+              "isSetMenu": false,
+              "options": [],
+              "expectedSteps": [
+                "select_burger",
+                "suggest_set_menu",
+                "confirm_single",
+                "add_to_cart"
+              ]
+            }
+          ],
+          "correctResponse": "스파이시 치킨 버거 단품이시군요! 세트로 하시면 1,500원만 추가하시면 되는데, 어떻게 하시겠어요?",
+          "paymentAmount": 6000
+        },
+        {
+          "id": "order3",
+          "customerName": "커플 손님",
+          "customerMood": "careful",
+          "requestText": "더블 치즈 세트 두 개요. 하나는 음료를 사이다로 바꿔주세요.",
+          "items": [
+            {
+              "menuId": "set_double_cheese",
+              "menuName": "더블 치즈 세트",
+              "isSetMenu": true,
+              "options": [
+                {
+                  "key": "side_fries_m",
+                  "label": "감자튀김 M",
+                  "isRequired": true
+                },
+                {
+                  "key": "drink_cola_m",
+                  "label": "콜라 M",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "select_set_menu",
+                "confirm_side_fries_m",
+                "confirm_drink_cola_m",
+                "set_quantity_2",
+                "modify_drink_to_sprite_one",
+                "add_to_cart"
+              ]
+            }
+          ],
+          "correctResponse": "더블 치즈 세트 2개, 한 개는 콜라, 한 개는 사이다로 준비해드리겠습니다!",
+          "paymentAmount": 16000
+        },
+        {
+          "id": "order4",
+          "customerName": "바쁜 손님",
+          "customerMood": "hurried",
+          "requestText": "빨리요! 킹스 클래식 세트 하나, 감자는 L로요!",
+          "items": [
+            {
+              "menuId": "set_classic",
+              "menuName": "킹스 클래식 세트",
+              "isSetMenu": true,
+              "options": [
+                {
+                  "key": "side_fries_l",
+                  "label": "감자튀김 L (+500원)",
+                  "isRequired": true
+                },
+                {
+                  "key": "drink_cola_m",
+                  "label": "콜라 M",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "select_set_menu",
+                "upgrade_fries_to_l",
+                "confirm_drink_cola_m",
+                "add_to_cart"
+              ]
+            }
+          ],
+          "correctResponse": "네, 킹스 클래식 세트 감자 L 사이즈로 바로 준비해드릴게요!",
+          "paymentAmount": 8000
+        }
+      ]
+    }
+  ],
+  "unlockTips": [
+    "tip_upselling",
+    "tip_set_menu"
+  ]
+}
