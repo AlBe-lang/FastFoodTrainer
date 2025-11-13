@@ -1,0 +1,97 @@
+{
+  "id": "day1",
+  "dayNumber": 1,
+  "title": "첫 출근, 기본기 익히기",
+  "description": "오늘은 첫 출근날이에요! 긴장하지 말고 기본적인 주문 받는 법부터 차근차근 배워봐요.",
+  "learningGoals": [
+    "기본 인사와 주문 듣기",
+    "POS 시스템 이해하기",
+    "단품 메뉴 정확히 입력하기"
+  ],
+  "requiredScore": 60,
+  "stages": [
+    {
+      "id": "day1_stage1",
+      "type": "counter",
+      "title": "첫 손님 맞이하기",
+      "timeLimitSeconds": 300,
+      "maxSimultaneousOrders": 1,
+      "orders": [
+        {
+          "id": "order1",
+          "customerName": "상냥한 손님",
+          "customerMood": "friendly",
+          "requestText": "안녕하세요! 킹스 클래식 버거 하나만 주세요.",
+          "items": [
+            {
+              "menuId": "burger_classic",
+              "menuName": "킹스 클래식 버거",
+              "isSetMenu": false,
+              "options": [],
+              "expectedSteps": [
+                "select_burger",
+                "confirm_single",
+                "add_to_cart"
+              ]
+            }
+          ],
+          "correctResponse": "네, 킹스 클래식 버거 단품 하나 맞으시죠? 총 5,500원입니다!",
+          "paymentAmount": 5500
+        },
+        {
+          "id": "order2",
+          "customerName": "바쁜 직장인",
+          "customerMood": "hurried",
+          "requestText": "저기요, 스파이시 치킨 버거 주세요. 빨리요!",
+          "items": [
+            {
+              "menuId": "burger_spicy_chicken",
+              "menuName": "스파이시 치킨 버거",
+              "isSetMenu": false,
+              "options": [],
+              "expectedSteps": [
+                "select_burger",
+                "confirm_single",
+                "add_to_cart"
+              ]
+            }
+          ],
+          "correctResponse": "네, 스파이시 치킨 버거 단품이시죠? 바로 준비해드릴게요!",
+          "paymentAmount": 6000
+        },
+        {
+          "id": "order3",
+          "customerName": "꼼꼼한 손님",
+          "customerMood": "careful",
+          "requestText": "더블 치즈 버거 주세요. 양상추는 빼주시고요.",
+          "items": [
+            {
+              "menuId": "burger_double_cheese",
+              "menuName": "더블 치즈 버거",
+              "isSetMenu": false,
+              "options": [
+                {
+                  "key": "no_lettuce",
+                  "label": "양상추 빼기",
+                  "isRequired": true
+                }
+              ],
+              "expectedSteps": [
+                "select_burger",
+                "apply_option_no_lettuce",
+                "confirm_single",
+                "add_to_cart"
+              ]
+            }
+          ],
+          "correctResponse": "네, 더블 치즈 버거 양상추 빼고 준비해드리겠습니다!",
+          "paymentAmount": 6500
+        }
+      ]
+    }
+  ],
+  "unlockTips": [
+    "tip_greeting",
+    "tip_order_repeat"
+  ]
+}

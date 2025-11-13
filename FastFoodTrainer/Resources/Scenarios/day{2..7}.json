@@ -1,0 +1,19 @@
+{
+  "id": "day'$i'",
+  "dayNumber": '$i',
+  "title": "Day '$i' 시나리오",
+  "description": "Day '$i' 학습 내용입니다.",
+  "learningGoals": ["목표 1", "목표 2", "목표 3"],
+  "requiredScore": 60,
+  "stages": [
+    {
+      "id": "day'$i'_stage1",
+      "type": "counter",
+      "title": "연습 세션",
+      "timeLimitSeconds": 300,
+      "maxSimultaneousOrders": 1,
+      "orders": []
+    }
+  ],
+  "unlockTips": []
+}

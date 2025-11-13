@@ -1,0 +1,28 @@
+{
+  "tips": [
+    {
+      "id": "tip_greeting",
+      "title": "첫인사가 중요해요",
+      "body": "손님이 오시면 먼저 눈을 맞추고 밝게 인사하세요. '안녕하세요, 주문 도와드릴게요!'만 해도 첫인상이 확 달라져요. 처음엔 어색하지만 곧 익숙해질 거예요!",
+      "category": "greeting",
+      "unlockCondition": "day1_complete",
+      "author": "3년차 알바 김OO"
+    },
+    {
+      "id": "tip_order_repeat",
+      "title": "주문 복창은 필수!",
+      "body": "주문을 다 듣고 나면 꼭 복창하세요. '킹스 클래식 버거 단품 하나 맞으시죠?' 이렇게요. 실수를 미리 잡을 수 있고, 손님도 안심하세요. POS 보면서 복창하면 더 정확해요.",
+      "category": "order_taking",
+      "unlockCondition": "day1_complete",
+      "author": "2년차 알바 이OO"
+    },
+    {
+      "id": "tip_rush_hour",
+      "title": "피크타임 꿀팁",
+      "body": "점심 러시 때는 다음 손님 주문을 미리 듣고 있으면 시간이 절약돼요. 한 주문 마무리하면서 다음 분께 '잠시만요, 곧 도와드릴게요!' 하고 먼저 메뉴부터 여쭤보세요.",
+      "category": "time_management",
+      "unlockCondition": "day3_complete",
+      "author": "5년차 알바 박OO"
+    }
+  ]
+}
